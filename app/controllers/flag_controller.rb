@@ -6,9 +6,14 @@ class FlagController < ApplicationController
 
   private
 
+    def direction
+
+    end
+
     def response
       {
-
+        team: 5,
+        nextCommand: direction
       }
     end
 end
