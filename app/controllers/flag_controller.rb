@@ -1,8 +1,8 @@
 class FlagController < ApplicationController
 
   def index
-    # render text: "callback(#{response_data.to_json})"
-    render json: response_data
+    render text: "jsonpCallback(#{response_data.to_json})"
+    # render json: response_data
   end
 
   private
