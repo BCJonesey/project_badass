@@ -42,11 +42,11 @@ class FlagController < ApplicationController
     end
 
     def x
-      tiles['location']['x']
+      tiles['x']
     end
 
     def y
-      tiles['location']['y']
+      tiles['y']
     end
 
     def furthest
@@ -59,6 +59,6 @@ class FlagController < ApplicationController
     end
 
     def tiles
-      @tiles ||= JSON.parse params[:tiles]
+      @tiles ||= JSON.parse params[:data]
     end
 end
